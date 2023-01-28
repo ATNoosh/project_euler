@@ -17,6 +17,6 @@ while 1 == 1:
     s += f
     i += 1
 
-print e
-print o
-print s
+print(e)
+print(o)
+print(s)
