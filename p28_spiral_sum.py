@@ -28,5 +28,5 @@ sys.setrecursionlimit(2000)
 def reqursive_fun(n): return 1 if (n == 1) else reqursive_fun(n - 1) + 16 * (n**2) - 28 * n + 16
 def simple_fun(n): return ((16 * (n ** 3)) + (14 * n))/3 - 6 * (n ** 2) - 3
 
-print(simple_fun(10))
-print(reqursive_fun(10))
+print(simple_fun(501))
+print(reqursive_fun(501))
