@@ -17,12 +17,16 @@ After simplification:
 The formula discovered as below
 f(n) = f(n-1) + 16n^2 -28n + 16
 f(1) = 1
+
+After solving recurisve function:
+f(n) = (16/3)n^3 - 6n^2 + (14/3)n - 3
 """
 
 import sys
 sys.setrecursionlimit(2000)
 
+def reqursive_fun(n): return 1 if (n == 1) else reqursive_fun(n - 1) + 16 * (n**2) - 28 * n + 16
+def simple_fun(n): return ((16 * (n ** 3)) + (14 * n))/3 - 6 * (n ** 2) - 3
 
-def fun(n): return 1 if (n == 1) else fun(n - 1) + 16 * (n**2) - 28 * n + 16
-
-print(fun(501))
+print(simple_fun(501))
+print(reqursive_fun(501))
