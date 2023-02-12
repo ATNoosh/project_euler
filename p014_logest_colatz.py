@@ -1,3 +1,4 @@
+import sys
 colatz = lambda n: n/2 if(n%2==0) else 3*n+1
 
 def colatz_sequence(n):
@@ -16,6 +17,8 @@ for i in range(999999,1,-1):
     if mx<tmp:
         mx = tmp
         mxi = i
+        sys.stdout.write("\r%d%%" % i)
+        sys.stdout.flush()
 
 print(mx)
 print(mxi)
