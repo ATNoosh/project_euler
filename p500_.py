@@ -68,9 +68,9 @@ f = open("all_primes.txt","w")
 f.write(','.join(map(str,all_primes)))
 f.close()
 """
-"""st = time.time()
+st = time.time()
  
-for i in range(500499):
+for i in range(10000):
     if i%1000==0:
         print(i)
         et = st
@@ -80,4 +80,4 @@ for i in range(500499):
 print(prime_arr)
 final_num = calculate_prim_arr()
 print(final_num)
-print(final_num%500500507)"""
+print(final_num%500500507)
