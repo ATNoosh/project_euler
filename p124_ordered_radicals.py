@@ -61,8 +61,17 @@ arr = []
 print(61)
 for i in range(1,100001):
     print(i)
-    arr.append([get_radical(i),i])
-sort_arr(arr)
+    #arr.append([get_radical(i),i])
+    new_element = [get_radical(i),i]
+    j = len(arr)
+    while j>1:
+        if arr[j - 1][0]<=new_element[0]:
+            break
+        j -= 1
+    arr.insert(j,new_element)
+
+
+#sort_arr(arr)
 
 
 print(arr[10000-1])
